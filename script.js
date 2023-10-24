@@ -1,15 +1,12 @@
 // Dichiaro un array images contente la struttura dati delle immagini;
 const images =["img/01.jpg","img/02.jpg","img/03.jpg","img/04.jpg"]
-
-//              <div class="item active">
-//                 <img src="img/01.jpg">
-//             </div>  
+ 
 
 console.log(images);
 //Scrivo un ciclo for per ripetere l?operazione più volte qaunti sono i dati nell'array
 
-// const prev = document.querySelector(".prev")
-
+const next = document.querySelector(".next")
+const prev = document.querySelector(".prev")
 
 const slideElem = document.querySelector(".items");
 
@@ -25,6 +22,19 @@ console.log("element")
 console.log("element")
 }
 }
+let imageActive = 0;
+document.querySelector(".next").addEventListener('click',function(){
+    console.log('next');
+    document.querySelector('.active').classList.remove('active');
+    imageActive++;
+    document.querySelectorAll('.item')(imageActive).classList.add('active')
+});
 
-const div = document.querySelector("div")
+
+// document.querySelector(".prev").addEventListener('click',function(){
+//     console.log('prev');
+//     document.querySelector('.active').classList.remove('active');
+//     imageActive--;
+//     document.querySelectorAll('.item')(imageActive).classList.add('active')
+// })
 
