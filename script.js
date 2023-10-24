@@ -24,10 +24,9 @@ console.log("element")
 }
 let imageActive = 0;
 document.querySelector(".next").addEventListener('click',function(){
-    console.log('next');
-    document.querySelector('.active').classList.remove('active');
+    document.querySelector(".next").classList.remove("active");
     imageActive++;
-    document.querySelectorAll('.item')(imageActive).classList.add('active')
+    document.querySelector(".item").classList.add("active");
 });
 
 
