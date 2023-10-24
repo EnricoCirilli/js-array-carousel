@@ -14,7 +14,16 @@ Aggiungere il **ciclo infinito** del carosello. Ovvero se è attiva la prima imm
 Non lasciamoci spaventare dalla complessità apparente dell'esercizio, ma analizziamo prima, come abbiamo fatto sempre, cosa ci potrebbe aspettare.
 
 
-**Procedimento**
+**Procedimento milestone 1**
 dati :
+1. Dichiaro un array images contente la struttura dati delle immagini;
+2. Scrivo un ciclo for dove i è uguale a zero, i < della lunghezza delle immagini, e sempre i che incrmenta di 1.
+
+
 Logica :
+3. concateno il ciclo for con un template literal
+e uso la condizione se i = 0 allora slideElem selezionerà le classi items e active altrimenti solo la classe item.
+
+
+
 Output :
